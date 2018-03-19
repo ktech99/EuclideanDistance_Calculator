@@ -1,3 +1,6 @@
+// This class returns the EuclideanDistance score between the ratings of 2 movie critics
+// Closer to 0 means more different, 1 means exactly same score
+
 import java.util.*;
 
 public class EuclideanDistance {
@@ -12,9 +15,9 @@ public class EuclideanDistance {
       List<Double> stars = new ArrayList<Double>();
       System.out.println("Enter critic " + (i + 1) + "'s name :");
       String name = sc.nextLine();
-      System.out.println("enter rating 1 :");
+      System.out.println("enter movie rating 1 :");
       stars.add(sc2.nextDouble());
-      System.out.println("enter rating 2 :");
+      System.out.println("enter movie rating 2 :");
       stars.add(sc2.nextDouble());
       rating.put(name, stars);
     }
